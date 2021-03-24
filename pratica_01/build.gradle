@@ -9,6 +9,11 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'application'
+}
+
+application {
+	mainClassName 'pratica_01.Calculadora'
 }
 
 test {
@@ -17,7 +22,6 @@ test {
 		events "passed", "skipped", "failed"
 	}
 }
-
 
 repositories {
     // Use jcenter for resolving dependencies.
