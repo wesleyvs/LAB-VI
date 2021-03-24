@@ -4,6 +4,6 @@ public class Calculadora {
 	
 	//Este método irá realizar o calculo da raiz cúbica utilizando a lib Math
 	public double raizCubica(double x) {
-		return 3;
+		return Math.cbrt(x);
 	}
 }

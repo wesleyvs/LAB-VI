@@ -7,10 +7,12 @@ public class CalculadoraTest {
 	
 	/*Este teste irá vereficar se o calculo do método raizCubica
 	da classe Calculadora irá retornar o resultado corretamente.*/
+	
+	Calculadora calc = new Calculadora();
+	
 	@Test
 	public void calcRaizCubica() {
-		Calculadora calc = new Calculadora();
 		double resultado = calc.raizCubica(27);
-		assertEquals(2, resultado);
+		assertEquals(3, resultado);
 	}
 }
