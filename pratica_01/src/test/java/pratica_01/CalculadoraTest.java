@@ -1,6 +1,8 @@
 package pratica_01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
@@ -12,7 +14,11 @@ public class CalculadoraTest {
 	
 	@Test
 	public void calcRaizCubica() {
-		double resultado = calc.raizCubica(27);
-		assertEquals(3, resultado);
+		assertEquals(3, calc.raizCubica(27));
+	}
+	
+	@Test
+	public void calcRaizCubicaContraTest() {
+		assertNotEquals(2, calc.raizCubica(27));
 	}
 }
